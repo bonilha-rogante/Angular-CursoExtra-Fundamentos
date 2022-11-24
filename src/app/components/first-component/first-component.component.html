@@ -1,0 +1,20 @@
+<div class="class">
+  <h2 class="title">Nome: {{ name }}</h2>
+
+  <p>Idade: {{ age }}</p>
+
+  <p>Profissão: {{ job }}</p>
+  <p>Hobbie que mais gosta: {{ hobbies[2] }}</p>
+  <p>Nome do carro: {{ car.name }} - {{ car.cor }} - {{ car.year }}</p>
+  <p>
+    Descrição do Produto: Nome: {{ produto.nome }} Descricao:
+    {{ produto.descricao }} Valor: {{ produto.preco }}
+  </p>
+
+  <div><a href="">Veja mais sobre o Guilherme</a></div>
+
+  <div>
+    <p *ngIf="ola">Olá!</p>
+  </div>
+  <button (click)="mostrar()">Click em Mim</button>
+</div>

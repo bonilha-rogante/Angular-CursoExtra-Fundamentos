@@ -1,0 +1,20 @@
+<div class="class">
+  <h2>Two Way Data Biding</h2>
+  <form action="">
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="Digite o seu nome"
+    />
+    <input
+      type="text"
+      name="idade"
+      [(ngModel)]="age"
+      placeholder="digite sua idade"
+    />
+    <input type="submit" value="Enviar" />
+  </form>
+  <p>O nome é: {{ name }}</p>
+  <p>Sua idade é: {{ age }}</p>
+</div>

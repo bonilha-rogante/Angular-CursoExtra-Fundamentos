@@ -1,0 +1,16 @@
+<div class="class">
+  <div *ngIf="canShow">Estamos Mostrando isso porque foi permitido</div>
+  <h2 *ngIf="name === 'Guilherme'; else nameNotFound">O nome é Guilherme</h2>
+  <ng-template #nameNotFound>
+    <div>
+      <h2>Nome não foi encontrado</h2>
+    </div>
+  </ng-template>
+
+  <div *ngIf="idade === 30; else idadeIncorreta">Minha idade é de 30 anos</div>
+  <ng-template #idadeIncorreta>
+    <div>
+      <h2>Sua idade está incorreta</h2>
+    </div>
+  </ng-template>
+</div>
